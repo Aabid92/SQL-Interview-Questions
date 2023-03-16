@@ -8,5 +8,5 @@ SELECT P.page_id FROM pages as P
 LEFT JOIN 
 page_likes AS pl 
 ON P.page_id = pl.page_id
-WHERE liked_date is NULL
+WHERE liked_date IS NULL
 ORDER BY page_id ASC;
